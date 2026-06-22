@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pickleTracker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; background: #000; overflow: hidden; }
+    #canvas { display: block; width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    var canvas = document.getElementById('canvas');
+    var Module = {
+      canvas: canvas,
+    };
+  </script>
+  <script src="pickletracker.js"></script>
+</body>
+</html>
